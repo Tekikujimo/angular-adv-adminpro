@@ -29,3 +29,26 @@
     height: 200px;
     width: 200px;
 }
+
+.w100 {
+    width: 100px;
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 25px;
+}
+
+.oculto{
+    display: none;
+}
+
+.fondo-modal-imagen {
+    background-color:  rgba(0, 0, 0, 0.4);
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index: 9999;
+}
