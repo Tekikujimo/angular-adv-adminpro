@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FileUploadService } from 'src/app/services/file-upload.service';
 import { UsuarioService } from 'src/app/services/usuario.service';
-import { Usuario } from 'src/models/usuario.model';
+import { Usuario } from 'src/app/models/usuario.model';
 import swal from 'sweetalert2';
 
 @Component({

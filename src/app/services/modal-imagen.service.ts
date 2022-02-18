@@ -8,7 +8,7 @@ const base_url = environment.base_url;
 })
 export class ModalImagenService {
 
-  private _ocultarModal: boolean = false;
+  private _ocultarModal: boolean = true;
   public tipo!: 'usuarios' | 'medicos' | 'hospitales';
   public id!: string;
   public img?: string;

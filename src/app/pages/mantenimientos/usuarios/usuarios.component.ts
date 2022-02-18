@@ -3,7 +3,7 @@ import { delay, Subscription } from 'rxjs';
 import { BusquedasService } from 'src/app/services/busquedas.service';
 import { ModalImagenService } from 'src/app/services/modal-imagen.service';
 import { UsuarioService } from 'src/app/services/usuario.service';
-import { Usuario } from 'src/models/usuario.model';
+import { Usuario } from 'src/app/models/usuario.model';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -74,7 +74,7 @@ export class UsuariosComponent implements OnInit {
     }
 
     this.busquedasService.buscar('usuarios', termino)
-        .subscribe( resultados => {
+        .subscribe( (resultados : any[]) => {
           console.log(resultados);
           this.usuarios = resultados;
         });
