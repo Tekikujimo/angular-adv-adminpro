@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://adminpro-backend99.herokuapp.com",
+        "secure": true,
+        "changeOrigin": true
+    }
+}
